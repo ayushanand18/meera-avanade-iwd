@@ -59,7 +59,7 @@ export default function App(){
                             component="img"
                             alt="benefit-2"
                             height="140"
-                            image=""
+                            image="https://img.freepik.com/free-vector/person-different-ages_23-2148422958.jpg"
                         />
                             <CardContent>
                                 <Typography gutterBottom variant="h4" component="div">
@@ -75,7 +75,7 @@ export default function App(){
                             component="img"
                             alt="benefit-3"
                             height="140"
-                            image=""
+                            image="https://img.freepik.com/free-vector/multicultural-people-standing-together_74855-6583.jpg"
                         />
                             <CardContent>
                                 <Typography gutterBottom variant="h4" component="div">
@@ -115,19 +115,19 @@ export default function App(){
 
                         <div className="point">
                             <Typography variant="h6">
-                                Point Number 3
+                                Simplistic and minimal. Period.
                             </Typography>
                             <Typography variant="body1">
-                                This is the point number three.
+                                No heavy onboarding process, no tons of questions, no card-based dashboards - just a simple prompt and a query box is all you need.
                             </Typography>
                         </div>
 
                         <div className="point">
                             <Typography variant="h6">
-                                Point Number 4.
+                                This is not a screening interview.
                             </Typography>
                             <Typography variant="body1">
-                                This is the point number fourth.
+                                This is not your interview where you will be asked tons of question before moving you to the right answer. So simple flow that even a 6 year old can use Meera to get solutions.
                             </Typography>
                         </div>
 

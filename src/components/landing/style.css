@@ -203,6 +203,9 @@
     font-family: var(--font-name);
     font-size: 20px;
 }
+.bodyContainer .point .MuiTypography-h6{
+    font-weight: 600;
+}
 .bodyContainer .MuiTypography-body1{
     font-family: var(--font-name);
 }
