@@ -20,8 +20,13 @@ export default function App(){
         [],
         [],
     ];
+    const suggestions = [
+        "How should I deal with cramps?",
+        "How to soothe my mind during periods?",
+    ]
     const [answers, setAnswers] = useState([0, 0, '', '']);
     const [number, setNumber] = useState(0);
+    
     const questions = [
         "How are you doing?",
         "What is your age?",
@@ -56,7 +61,19 @@ export default function App(){
             <div className='options'>
                 {liveOptions}
             </div>
-
+            
+            <div className="suggestion-chips" style={{display: (number===3)?'block':'none'}}>
+                {
+                suggestions.map((suggestion)=>
+                    <Button variant="outlined" onClick={()=>{
+                        answers[number] = suggestion;
+                        setNumber(number+1);
+                    }}>
+                        {suggestion}
+                    </Button>
+                )}
+            </div>
+            
             <TextField 
                 style={{display:textEnabled[number]?'block':'none'}}
                 onKeyDown={(e) => {
@@ -66,20 +83,22 @@ export default function App(){
                         // incremenet the question
                         setNumber(number+1);
                         setAnswers(answers);
-                        console.log(answers);
                         // also clear the text area
                         e.target.value='';
                     }
                 }}
             />
             <div className="answer-space" style={{display: number===4?'block':'None'}}>
-                you asked {answers[number-1]}.
+                You asked {answers[number-1]}.
+                <div className="get-back" onClick={() => {
+                    setNumber(number-1);
+                    console.log(number);
+                }}>
+                    <Typography variant="body1">
+                        Ask Another Query.
+                    </Typography>
+                </div>
             </div>
-            {/* 
-            just for debugging, a back button
-            <div onClick={()=> setNumber(number-1)} >
-                back
-            </div> */}
         </div>
     )
 }

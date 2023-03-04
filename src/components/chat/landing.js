@@ -9,7 +9,7 @@ export default function App(){
     return (
         <div className="landingContainer">
             <div className="wrapper">
-                <div style={{display: !chatbot?'None':'block'}}>
+                <div style={{display: chatbot?'None':'block'}}>
                     <div class="one" style={{display:imageN===1?'block':'None'}} >
                         <img 
                         src="https://img.freepik.com/free-vector/flat-person-meditating-peacefully_23-2148917144.jpg"
@@ -47,7 +47,10 @@ export default function App(){
                     </Button>
             </div>
             
-            <Chatbot className="chatbot-container" style={{display: !chatbot?'block':'None'}} />
+            <div style={{display: chatbot?'block':'None'}}>
+                <Chatbot className="chatbot-container" />
+            </div>
+            
             </div>
         </div>
     )
