@@ -42,14 +42,15 @@ export default function App(){
                             component="img"
                             alt="benefit-1" // feature not benefit
                             height="140"
-                            // image="file/to/path.jpg"
+                            image="https://static.vecteezy.com/system/resources/previews/000/696/497/non_2x/wire-low-poly-cyber-lock-security-padlock-vector.jpg"
                         />
                             <CardContent>
                                 <Typography gutterBottom variant="h4" component="div">
-                                    It can help do something
+                                    Secured with encryption, and no third party apps.
                                 </Typography>
                                 <Typography variant="body2">
-                                    Some detailed information
+                                    We neither take your personal data, let alone storing or sharing with third-party agents.
+                                    When you chat with Meera, it answers everything locally on your device and no information is stored on our servers.
                                 </Typography>
                             </CardContent>
                     </Card>
@@ -58,14 +59,14 @@ export default function App(){
                             component="img"
                             alt="benefit-2"
                             height="140"
-                            // image="file/to/path.jpg"
+                            image=""
                         />
                             <CardContent>
                                 <Typography gutterBottom variant="h4" component="div">
-                                    It can help do something
+                                    Get information right for your age group.
                                 </Typography>
                                 <Typography variant="body2">
-                                    Some detailed information
+                                    For every query or question you ask Meera, she will ask you about your age group so that she can advise the best for your body.
                                 </Typography>
                             </CardContent>
                     </Card>
@@ -74,14 +75,14 @@ export default function App(){
                             component="img"
                             alt="benefit-3"
                             height="140"
-                            // image="file/to/path.jpg"
+                            image=""
                         />
                             <CardContent>
                                 <Typography gutterBottom variant="h4" component="div">
-                                    It can help do something
+                                    Feels human but it isn't
                                 </Typography>
                                 <Typography variant="body2">
-                                    Some detailed information
+                                    Meera makes your experience as human as possible but without a human in between so that you don't feel shy or any form of discomfort.
                                 </Typography>
                             </CardContent>
                     </Card>
@@ -105,16 +106,16 @@ export default function App(){
 
                         <div className="point">
                             <Typography variant="h6">
-                                Point Number 2.
+                                Powered with LLMs.
                             </Typography>
                             <Typography variant="body1">
-                                This is the point number two.
+                                Large Language Models are the talk of the town. To enhance user experience Meera uses Co:here LLM API.
                             </Typography>
                         </div>
 
                         <div className="point">
                             <Typography variant="h6">
-                                Point Number 3.
+                                Point Number 3
                             </Typography>
                             <Typography variant="body1">
                                 This is the point number three.
