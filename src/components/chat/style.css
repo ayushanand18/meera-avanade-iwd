@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+:root{
+    --font-name: "Helvetica", "Noto Sans"
+}
+
+.landingContainer{
+    font-family: "Noto Sans";
+    height: 100vh;
+    padding: 0px 10px 0px 10px;
+}
+.landingContainer .wrapper{
+    max-width: 400px;
+    margin: 0px auto 0px auto;
+    padding: 0px 10px 0px 10px;
+    height: 100vh;
+}
+.landingContainer .image{
+    position: relative;
+    top: 30vh;
+    width: 90%;
+    left: 5%;
+    border-radius: 20px;
+}
+.landingContainer .MuiTypography-body1{
+    position: relative;
+    top: 40vh;
+    width: 70%;
+    margin: 0px auto 0px auto;
+    text-align: center;
+}
+.landingContainer .MuiButton-contained{
+    text-transform: capitalize;
+    position: relative;
+    top: 32vh;
+    width: 95%;
+    background-color: rgba(67, 35, 253, 0.836);
+    text-align: center;
+    font-weight: 600;
+    font-size: medium;
+    padding: 10px 0px 10px 0px;
+    display: flex;
+    left: 2vw;
+    border-radius: 10px;
+}
+.landingContainer hr{
+    height: 5px;
+    background-color: darkgrey;
+    position: relative;
+    bottom: -40vh;
+    border-radius: 30px 30px;
+    width: 50px;
+}
+@media only screen and (max-width: 600px) {
+    .landingContainer .MuiButton-contained{
+        top: 42vh;
+        left: 2vw;
+    }
+}
+.landingContainer .MuiButton-contained:hover{
+    background-color: rgba(60, 32, 220, 0.769);
+    color:white;
+}
+
+/* chatbot container */
+.chatbotContainer{
+    padding: 20px 10px 20px 10px;
+    font-family:  var(--font-name);
+    position: relative;
+    top: 8vh;
+}
+@media only screen and (max-width: 600px){
+    .chatbotContainer{
+        top: 35vh;
+    }
+}
+.chatbotContainer .MuiTypography-h4{
+    font-weight: 600;
+    font-family: var(--font-name);
+    width: 50%;
+    padding: 0px 10px 30% 10px;
+}
+.chatbotContainer .MuiButton-outlined{
+    border-radius: 30px 30px;
+    text-transform: capitalize;
+    float: right;
+    clear: right;
+    margin: 10px auto 10px 10px;
+}
+.chatbotContainer{
+    transition: .5s ease-in-out all;
+}
+.chatbotContainer .MuiOutlinedInput-root {
+    border-radius: 10px;
+    position: fixed;
+    bottom: 8vh;
+    width: 85%;
+}

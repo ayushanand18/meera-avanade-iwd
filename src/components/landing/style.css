@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/* header styles */
+:root{
+    --font-name : "Helvetica", "Poppins";
+}
+
+.headerContainer .wrapper{
+    font-family: var(--font-name);
+    padding: 20px 12px 12px 15px;
+    font-size: 24px;
+    min-height: 50px;
+    max-width: 900px;
+    margin-left: auto;
+    color: white;
+    margin-right: auto;
+}
+.headerContainer .MuiButton-text{
+    color: white;
+    margin-left: 10px;
+}
+.headerContainer{
+    background-color: #105708;
+}
+.MuiButton-contained, .MuiButton-text{
+    font-family: var(--font-name);
+}
+
+.headerContainer .logo{
+    font-weight: 700;
+    overflow-x: hidden;
+    float: left;
+}
+.headerContainer .horizontalGroup{
+    float: right;
+}
+
+/* footer styles */
+.footerContainer .wrapper{
+    padding: 20px 10px 40px 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 900px;
+    min-height: 200px;
+    color: white;
+    font-family: var(--font-name);
+    text-align: justify;
+}
+.footerContainer{
+    background-color: #090b2c;
+    padding: 0px 0px 60px 0px;
+}
+.footerContainer .MuiTypography-h4{
+    padding: 40px 0px 20px 0px;
+    font-family: var(--font-name);
+    font-weight: 800;
+}
+.footerContainer .MuiTypography-body1{
+    color: lightgrey;
+    padding: 10px 0px 30px 0px;
+    max-width: 400px;
+    font-family: var(--font-name);
+}
+.footerContainer .MuiButton-contained{
+    background: transparent;
+    border-color: white;
+}
+.footerContainer .ButtonGroup{
+    padding: 20px 0px 0px 0px;
+    line-height: 20px;
+}
+.footerContainer .MuiSvgIcon-root{
+    font-size: 30px;
+    cursor: pointer;
+}
+@media only screen and (max-width: 600px) {
+    .footerContainer{
+        padding: 10% 5% 60% 5%;
+    }
+    .footerContainer .MuiTypography-body1{
+        font-size: 22px;
+    }
+}
+/* body styles */
+.bodyContainer .wrapper{
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: var(--font-name);
+    text-align: left;
+    padding: 40px 0px 40px 0px;
+    height: max-content;
+}
+@media only screen and (min-width: 700px) {
+    .bodyContainer .hero-section .header-text {
+        width: 50%;
+        max-width: 600px;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .bodyContainer .hero-section{
+        padding: 10px 10px 10px 10px;
+    }
+    .bodyContainer .hero-section .image{
+        width: 100%;
+        position: relative;
+        top: -50px;
+        left: -10px;
+    }
+}
+@media only screen and (min-width: 700px) and (max-width:850px) {
+    .bodyContainer .hero-section .header-text {
+        width: 60%;
+    }
+    .bodyContainer .hero-section .image{
+        width: 40%;
+    }
+    .bodyContainer .hero-section{
+        padding: 10px 10px 10px 10px;
+        min-height: 500px;
+    }
+}
+.bodyContainer .light-themed .MuiPaper-root{
+    overflow-x: hidden;
+    display: inline-block;
+    margin: 0px 10px 0px 10px;
+}
+.bodyContainer .hero-section{
+    background-color: #105708;
+    height: max-content;
+}
+.bodyContainer .hero-section .header-text{
+    float: left;
+    overflow-x: hidden;
+    color: white;
+}
+.hero-section .MuiTypography-body1{
+    color: lightgrey;
+}
+.bodyContainer .hero-section .MuiTypography-h3{
+    padding: 30px 0px 40px 0px;
+    font-weight: 900;
+}
+.bodyContainer .MuiButton-contained{
+    margin: 40px 0px 30px 0px;
+    padding: 10px 30px 10px 30px;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+.bodyContainer .light-themed {
+    font-family: var(--font-name);
+    padding: 40px 10px 40px 10px;
+    margin: 20px auto 20px auto;
+    max-width: 900px;
+}
+.light-themed .MuiTypography-h3, .light-themed .MuiTypography-h2{
+    margin: 0px auto 0px auto;
+    max-width: max-content;
+    font-family: var(--font-name);
+    font-weight: 800;
+    text-align: center;
+    padding: 20px 15px 20px 15px;
+}
+.light-themed .MuiTypography-body1{
+    font-family: var(--font-name);
+    max-width: max-content;
+    color: rgb(28, 25, 25);
+    padding: 10px 0px 20px 0px;
+    width: 90%;
+    font-size: 20px;
+    margin: 0px auto 0px auto;
+}
+.bodyContainer .benefits{
+    background-color: #090b2c;
+    margin: 0px 0px 0px 2vw;
+    border-radius: 20px 0px 0px 20px;
+}
+.bodyContainer .benefits .wrapper-container{
+    margin: 0px auto 0px auto;
+    max-width: 900px;
+}
+.bodyContainer .benefits .MuiTypography-h3{
+    color: white;
+    padding: 40px 10px 40px 10px;
+    margin: 0px auto 0px auto;
+    width: max-content;
+    font-family: var(--font-name);
+    font-weight: 800;
+    color: white;
+}
+.bodyContainer .points{
+    font-family: var(--font-name);
+    margin: 0px auto 0px auto;
+    color: white;
+    padding: 10px 10px 50px 10px;
+    display: inline-block;
+}
+.bodyContainer .benefits .point{
+    max-width: 400px;
+    text-align: justify;
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px 20px 10px 20px;
+    font-family: var(--font-name);
+    font-size: 20px;
+}
+.bodyContainer .MuiTypography-body1{
+    font-family: var(--font-name);
+}
