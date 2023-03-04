@@ -17,14 +17,14 @@
 }
 .landingContainer .image{
     position: relative;
-    top: 30vh;
+    top: 16vh;
     width: 90%;
     left: 5%;
     border-radius: 20px;
 }
 .landingContainer .MuiTypography-body1{
     position: relative;
-    top: 40vh;
+    top: 15vh;
     width: 70%;
     margin: 0px auto 0px auto;
     text-align: center;
@@ -32,7 +32,7 @@
 .landingContainer .MuiButton-contained{
     text-transform: capitalize;
     position: relative;
-    top: 32vh;
+    top: 18vh;
     width: 95%;
     background-color: rgba(67, 35, 253, 0.836);
     text-align: center;
@@ -47,7 +47,7 @@
     height: 5px;
     background-color: darkgrey;
     position: relative;
-    bottom: -40vh;
+    bottom: -17vh;
     border-radius: 30px 30px;
     width: 50px;
 }
@@ -55,6 +55,15 @@
     .landingContainer .MuiButton-contained{
         top: 42vh;
         left: 2vw;
+    }
+    .landingContainer .image{
+        top: 30vh;
+    }
+    .landingContainer .MuiTypography-body1{
+        top: 40vh;
+    }
+    .landingContainer hr{
+        bottom: -40vh;
     }
 }
 .landingContainer .MuiButton-contained:hover{
@@ -95,4 +104,9 @@
     position: fixed;
     bottom: 8vh;
     width: 85%;
+}
+@media only screen and (min-width: 600px) {
+    .chatbotContainer .MuiOutlinedInput-root{
+        max-width: 450px;
+    }
 }

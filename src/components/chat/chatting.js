@@ -80,7 +80,7 @@ export default function App(){
                     if(e.key==='Enter'){
                         // set the name to answer
                         answers[number] = e.target.value;
-                        // incremenet the question
+                        // increment the question
                         setNumber(number+1);
                         setAnswers(answers);
                         // also clear the text area
