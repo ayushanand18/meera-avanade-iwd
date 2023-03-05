@@ -14,7 +14,7 @@ export default function App(){
                             Helping women with healthy hygiene
                         </Typography>
                         <Typography variant="body1">
-                            Geeta helps women know about menstrual hygiene in an anonymised and secured manner to help protect their privacy.
+                            Meera helps women know about menstrual hygiene in an anonymised and secured manner to help protect their privacy.
                         </Typography>
                         <ButtonGroup>
                             <Button variant="contained" href="/chat">Try Now For Free</Button>

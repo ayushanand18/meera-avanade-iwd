@@ -1,8 +1,40 @@
 import { Button, Typography, TextField } from "@mui/material";
 import {React, useState} from "react";
+import axios from 'axios';
+
+
 
 export default function App(){
-    const textEnabled = [0, 0, 1, 1];
+    async function CohereResponse(text){
+        const options = {
+        method: 'POST',
+        url: 'https://api.cohere.ai/v1/generate',
+        headers: {
+            accept: 'application/json',
+            'content-type': 'application/json',
+            authorization: 'Bearer sRHKLLNre9dF9cwKCXTI9dCzcB8IFpBgcNnlnGfR'
+        },
+        data: {
+            max_tokens: 100,
+            return_likelihoods: 'NONE',
+            truncate: 'END',
+            prompt: text
+        }
+        };
+    
+        await axios.request(options)
+        .then(function (response) {
+            console.log(response.data.generations[0].text);
+            answers[number] = response.data.generations[0].text;
+            setAnswers(answers);
+        })
+        .catch(function (error) {
+            alert('Error! Please try again after some time.');
+            console.error(error);
+        });
+    }
+
+    const textEnabled = [0, 0, 1];
     const options = [
         [
             "doing good",
@@ -18,7 +50,6 @@ export default function App(){
         ],
         [],
         [],
-        [],
     ];
     const suggestions = [
         "How should I deal with cramps?",
@@ -30,7 +61,6 @@ export default function App(){
     const questions = [
         "How are you doing?",
         "What is your age?",
-        "What's your name?",
         "Write down your query.",
         "",
     ]
@@ -48,7 +78,7 @@ export default function App(){
 
     return (
         <div className="chatbotContainer">
-            <div className="question" style={{display: number!==4?'block':'none'}}>
+            <div className="question" style={{display: number!==3?'block':'none'}}>
                 <img
                 src="https://www.svgrepo.com/show/94797/chat.svg" 
                 alt="message icon" 
@@ -62,11 +92,11 @@ export default function App(){
                 {liveOptions}
             </div>
             
-            <div className="suggestion-chips" style={{display: (number===3)?'block':'none'}}>
+            <div className="suggestion-chips" style={{display: (number===2)?'block':'none'}}>
                 {
-                suggestions.map((suggestion)=>
-                    <Button variant="outlined" onClick={()=>{
-                        answers[number] = suggestion;
+                suggestions.map(async (suggestion)=>
+                    <Button variant="outlined" onClick={async ()=>{
+                        await CohereResponse(suggestion);
                         setNumber(number+1);
                     }}>
                         {suggestion}
@@ -76,24 +106,29 @@ export default function App(){
             
             <TextField 
                 style={{display:textEnabled[number]?'block':'none'}}
-                onKeyDown={(e) => {
+                onKeyDown={async (e) => {
                     if(e.key==='Enter'){
                         // set the name to answer
-                        answers[number] = e.target.value;
+                        console.log('work');
+                        await CohereResponse(e.target.value);
                         // increment the question
                         setNumber(number+1);
                         setAnswers(answers);
+
                         // also clear the text area
                         e.target.value='';
                     }
                 }}
             />
-            <div className="answer-space" style={{display: number===4?'block':'None'}}>
-                You asked {answers[number-1]}.
+            <div className="answer-space" style={{display: number===3?'block':'None'}}>
+                <Typography variant="h5">
+                    The answer to your query is: {answers[number-1]}.
+                </Typography>
                 <div className="get-back" onClick={() => {
                     setNumber(number-1);
                     console.log(number);
                 }}>
+                    
                     <Typography variant="body1">
                         Ask Another Query.
                     </Typography>
