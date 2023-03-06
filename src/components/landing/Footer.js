@@ -12,8 +12,8 @@ export default function App(){
                     <hr width="75px" style={{height: "3px", color:"white", backgroundColor:"white"}} align="left"/>
                 </Typography>
                 <Typography variant="body1">
-                    Add some lines about the product. Since I don't have anything to say right now, I'll
-                    mostly fit in some dummy text so that the content looks full.
+                Meera is an exceptional chatbot cum app that can help with your queries during that time of the month simultaneously preserving both privacy and anonymity.
+                In a few taps and clicks, you have your answers. It is not a heavy card-based dashboard which most modern apps have, so you don't get lost among which card or article to read for help.
                 </Typography>
                 <Typography variant="body1">
                     &copy; 2023 Ayush Anand
